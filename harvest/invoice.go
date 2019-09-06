@@ -50,7 +50,7 @@ type InvoiceLineItem struct {
 	Project     *Project `json:"project,omitempty"`     // An object containing the associated project’s id, name, and code.
 	Kind        *string  `json:"kind,omitempty"`        // The name of an invoice item category.
 	Description *string  `json:"description,omitempty"` // Text description of the line item.
-	Quantity    *int16   `json:"quantity,omitempty"`    // The unit quantity of the item.
+	Quantity    *float64 `json:"quantity,omitempty"`    // The unit quantity of the item.
 	UnitPrice   *float64 `json:"unit_price,omitempty"`  // The individual price per unit.
 	Amount      *float64 `json:"amount,omitempty"`      // The line item subtotal (quantity * unit_price).
 	Taxed       *bool    `json:"taxed,omitempty"`       // Whether the invoice’s tax percentage applies to this line item.
